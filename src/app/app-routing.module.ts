@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: 'todo',
-    loadChildren: () => import('./chnage-detection/change-detection.module').then(m => m.ChangeDetectionModule)
+    loadChildren: () => import('./change-detection/change-detection.module').then(m => m.ChangeDetectionModule)
   },
   { path: '', component: HomeComponent},
   { path: '**', redirectTo: ''}
