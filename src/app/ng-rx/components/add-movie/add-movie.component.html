@@ -1,0 +1,30 @@
+<button type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+
+<div style="padding: 20px;">
+  <div style="padding: 20px;">
+    <h2>Create movie</h2>
+    <form class="example-form" #heroForm="ngForm" #form="ngForm" (ngSubmit)="addNewMovies(form)">
+      <mat-form-field class="example-full-width">
+        <mat-label>Movie name</mat-label>
+        <input name='name' ngModel matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Total earning</mat-label>
+        <input name='earning' ngModel type='number' matInput placeholder="In million">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Release date</mat-label>
+        <input name='releaseDate' ngModel matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <button type="submit" style="margin-left: 33%;" mat-raised-button color="primary">Add Movie</button>
+    </form>
+  </div>
+  <mat-divider></mat-divider>
+  <div style="padding: 20px;">
+    <app-movies-list></app-movies-list>
+  </div>
+</div>

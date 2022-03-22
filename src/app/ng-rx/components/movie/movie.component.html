@@ -1,0 +1,10 @@
+
+<div class="row">
+  <div class="col-3">
+    <mat-card *ngIf="movie$ | async as movie">
+      <h2>{{movie.name}}</h2>
+      <p>{{movie.releaseDate}}</p>
+      <p>{{movie.earning}} $</p>
+    </mat-card>
+  </div>
+</div>

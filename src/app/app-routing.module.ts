@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'dynamic-components',
     loadChildren: () => import('./dynamic-components/dynamic-components.module').then(m => m.DynamicComponentsModule)
   },
+  {
+    path: 'ngrx',
+    loadChildren: () => import('./ng-rx/ng-rx.module').then(m => m.NgRxModule)
+  },
   { path: '', component: HomeComponent},
   { path: '**', redirectTo: ''}
 ];

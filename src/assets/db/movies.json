@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "name": "Avengers End Game",
+      "releaseDate": "02/12/2020",
+      "earning": "129232",
+      "id": 1
+    },
+    {
+      "name": "Avengers Infinity War",
+      "releaseDate": "05/05/2021",
+      "earning": "422312",
+      "id": 2
+    },
+    {
+      "name": "Titanic",
+      "releaseDate": "12/10/1997",
+      "earning": "3433",
+      "id": 3
+    }
+  ]
+}
